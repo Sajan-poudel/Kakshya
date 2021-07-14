@@ -135,7 +135,6 @@ public class chatFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if(snapshot.exists()){
                         isTeacher=true;
-                        Toast.makeText(getActivity(), "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", Toast.LENGTH_LONG).show();
                         FirebaseRecyclerOptions<chatStudentModelClass> options =
                                 new FirebaseRecyclerOptions.Builder<chatStudentModelClass>()
                                         .setQuery(FirebaseDatabase.getInstance().getReference().child("students"), chatStudentModelClass.class)

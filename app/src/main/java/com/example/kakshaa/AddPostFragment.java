@@ -99,7 +99,6 @@ public class AddPostFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()) {
-                    Toast.makeText(getContext(), "it Exist", Toast.LENGTH_LONG).show();
                     String userId;
                     if (snapshot.child("Teacher").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("userId").getValue() != null) {
                         userId = snapshot.child("Teacher").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("userId").getValue().toString();

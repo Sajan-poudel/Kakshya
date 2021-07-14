@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -187,5 +188,6 @@ public class RegisterActivity extends AppCompatActivity {
         physicsSubCB=(CheckBox)findViewById(R.id.physicsSubCheckBox);
         chemSubCB=(CheckBox)findViewById(R.id.chemistrySubCheckBox);
         mathsSubCB=(CheckBox)findViewById(R.id.mathsSubCheckBox);
+
     }
 }

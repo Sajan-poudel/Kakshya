@@ -1,11 +1,12 @@
 package com.example.kakshaa;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class selectSubjectForAssignmentActivity extends AppCompatActivity {
     TextView physicsTV,chemistryTV,MathsTV;
@@ -15,9 +16,11 @@ public class selectSubjectForAssignmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_subject_for_assignment);
         initializefields();
+        Log.d("selectSubject", "till here its done");
         physicsTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d("physics", "till here its done");
                 startActivity(new Intent(selectSubjectForAssignmentActivity.this,addAssignment.class).putExtra("subjectName","physics"));
 
             }
@@ -38,9 +41,9 @@ public class selectSubjectForAssignmentActivity extends AppCompatActivity {
     }
 
     private void initializefields() {
-        physicsTV=(TextView)findViewById(R.id.physicsSubjectTextView);
-        chemistryTV=(TextView)findViewById(R.id.chemistrySubjectTextView);
-        MathsTV=(TextView)findViewById(R.id.mathsSubjectTextView);
+        physicsTV = findViewById(R.id.physicsSubjectTextView);
+        chemistryTV = findViewById(R.id.chemistrySubjectTextView);
+        MathsTV = findViewById(R.id.mathsSubjectTextView);
     }
 
 }

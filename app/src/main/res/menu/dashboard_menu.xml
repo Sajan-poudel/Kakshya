@@ -3,7 +3,7 @@
     <item
         android:title="Notices"
         android:icon="@drawable/notices"
-        android:id="@+id/announcementsMenuItem"/>
+        android:id="@+id/announcementsMenuItem" />
     <item
         android:title="Assignments"
         android:id="@+id/assignmentsMenuItem"
